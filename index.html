@@ -53,31 +53,31 @@
         <div class="gradient-bg text-white p-10 rounded-t-[30px] shadow-lg text-center">
             <h1 class="text-3xl font-bold mb-2 text-center">📖 Borang Daftar Kelas Mengaji</h1>
             <p class="text-green-100 italic font-light italic text-center">Pendaftaran Sesi 2026 - Kelas Eksklusif Permata Keluarga 😍</p>
-            <div class="mt-4 inline-block bg-white/20 px-4 py-1 rounded-full text-xs font-bold">
-                Yuran Pendaftaran: RM10 (Untuk penyediaan iqra' dan modul)
+            <div class="mt-4 inline-block bg-white/20 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
+                Yuran Pendaftaran: RM10 (Iqra' & Modul)
             </div>
         </div>
 
         <div class="form-card p-6 md:p-12 rounded-b-[30px] border border-gray-100">
             
             <!-- Banner Tawaran Early Bird -->
-            <div id="earlyBirdBanner" class="mb-10 p-6 bg-yellow-50 border-2 border-dashed border-yellow-400 rounded-2xl">
+            <div id="earlyBirdBanner" class="mb-10 p-6 bg-yellow-50 border-2 border-dashed border-yellow-400 rounded-2xl shadow-sm">
                 <div id="bannerNormal" class="flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
                     <div>
-                        <h3 class="font-bold text-yellow-800 flex items-center gap-2 justify-center md:justify-start uppercase text-sm text-center md:text-left">
+                        <h3 class="font-bold text-yellow-800 flex items-center gap-2 justify-center md:justify-start uppercase text-sm">
                             <span>🎁</span> TAWARAN "EARLY BIRD" 2026
                         </h3>
-                        <p class="text-xs text-yellow-700 mt-1 font-medium italic uppercase tracking-tighter text-center md:text-left">PENDAFTARAN PERCUMA (JIMAT RM10) - KHAS SESI PAGI & PETANG SAHAJA!</p>
+                        <p class="text-xs text-yellow-700 mt-1 font-medium italic uppercase tracking-tighter">PENDAFTARAN PERCUMA (JIMAT RM10) - KHAS SESI PAGI & PETANG SAHAJA!</p>
                     </div>
-                    <button type="button" onclick="claimEarlyBird()" class="bg-yellow-600 text-white text-xs px-8 py-3 rounded-full font-bold hover:bg-yellow-700 transition shadow-lg active:scale-95 whitespace-nowrap">
+                    <button type="button" onclick="claimEarlyBird()" class="bg-yellow-600 text-white text-xs px-8 py-3 rounded-full font-bold hover:bg-yellow-700 transition shadow-lg active:scale-95 whitespace-nowrap uppercase">
                         Tebus Slot Percuma
                     </button>
                 </div>
                 <div id="bannerClaimed" class="hidden flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
                     <div class="bg-green-100 text-green-800 p-3 rounded-xl font-bold text-sm border border-green-200 w-full md:w-auto flex items-center gap-2">
-                        <span>🌟</span> SLOT EARLY BIRD DITEBUS! (Yuran Daftar RM0)
+                        <span>🌟</span> SLOT EARLY BIRD DITEBUS! (Pendaftaran Percuma)
                     </div>
-                    <button type="button" onclick="cancelEarlyBird()" class="text-xs text-red-600 font-bold underline hover:text-red-800">
+                    <button type="button" onclick="cancelEarlyBird()" class="text-xs text-red-600 font-bold underline hover:text-red-800 uppercase">
                         Batal & Daftar Biasa (RM10)
                     </button>
                 </div>
@@ -86,25 +86,25 @@
             <form id="registrationForm" class="space-y-10">
                 
                 <!-- Maklumat Waris -->
-                <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100 space-y-5">
+                <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100 shadow-sm space-y-5">
                     <h3 class="font-bold text-blue-800 text-sm flex items-center gap-2 uppercase tracking-widest italic">Maklumat Waris (Penjaga)</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                         <div class="space-y-1">
                             <label class="text-[10px] font-bold text-blue-400 uppercase ml-1">Nama Penuh Waris</label>
-                            <input type="text" name="nama_waris" required placeholder="Nama Bapa / Ibu" class="w-full p-4 rounded-xl border border-blue-200 outline-none focus:ring-2 focus:ring-blue-400 bg-white transition-all">
+                            <input type="text" name="nama_waris" required placeholder="Nama Bapa / Ibu / Penjaga" class="w-full p-4 rounded-xl border border-blue-200 outline-none focus:ring-2 focus:ring-blue-400 bg-white transition-all shadow-sm">
                         </div>
                         <div class="space-y-1">
                             <label class="text-[10px] font-bold text-blue-400 uppercase ml-1">No. Telefon (WhatsApp)</label>
-                            <input type="text" name="no_tel_waris" required placeholder="Contoh: 0123456789" class="w-full p-4 rounded-xl border border-blue-200 outline-none focus:ring-2 focus:ring-blue-400 bg-white transition-all">
+                            <input type="text" name="no_tel_waris" required placeholder="Contoh: 0123456789" class="w-full p-4 rounded-xl border border-blue-200 outline-none focus:ring-2 focus:ring-blue-400 bg-white transition-all shadow-sm">
                         </div>
                     </div>
                 </div>
 
                 <!-- Bilangan Peserta -->
-                <div class="text-center bg-gray-50 p-8 rounded-2xl border border-gray-200">
+                <div class="text-center bg-gray-50 p-8 rounded-2xl border border-gray-200 shadow-sm">
                     <label class="block text-sm font-bold text-gray-700 mb-4 text-center">Berapa orang murid nak didaftarkan?</label>
                     <div class="flex justify-center gap-4">
-                        <select id="jumlahPeserta" class="w-full md:w-1/2 p-4 rounded-xl border border-gray-300 font-bold text-center outline-none bg-white cursor-pointer shadow-sm">
+                        <select id="jumlahPeserta" class="w-full md:w-1/2 p-4 rounded-xl border border-gray-300 font-bold text-center outline-none bg-white cursor-pointer shadow-sm hover:border-green-400 transition-colors">
                             <option value="1">1 Orang Murid</option>
                             <option value="2">2 Orang Murid</option>
                             <option value="3">3 Orang Murid</option>
@@ -112,7 +112,7 @@
                             <option value="5">5 Orang Murid</option>
                         </select>
                     </div>
-                    <p id="regFeeInfo" class="text-[10px] text-gray-500 mt-2 font-bold uppercase text-center">Yuran Pendaftaran: RM10 per murid</p>
+                    <p id="regFeeInfo" class="text-[10px] text-gray-500 mt-2 font-bold uppercase text-center tracking-wider">Yuran Pendaftaran: RM10 per murid</p>
                 </div>
 
                 <!-- Container Maklumat Murid -->
@@ -122,7 +122,7 @@
 
                 <!-- Pilihan Sesi (Multiple) -->
                 <div>
-                    <label class="block text-lg font-bold text-gray-800 mb-6 text-center">Pilih Sesi Pengajian (Boleh pilih >1)</label>
+                    <label class="block text-lg font-bold text-gray-800 mb-6 text-center uppercase tracking-tight">Pilih Sesi Pengajian (Boleh pilih >1)</label>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <label class="relative flex flex-col p-5 border-2 border-gray-100 rounded-2xl cursor-pointer hover:bg-gray-50 transition-all text-center has-[:checked]:border-green-600 has-[:checked]:bg-green-50 shadow-sm">
                             <input type="checkbox" name="sesi" value="Pagi" id="sesiPagi" class="hidden" onchange="updateProgramDisplay()">
@@ -144,47 +144,47 @@
 
                 <!-- Pilihan Program -->
                 <div id="programSection" class="hidden">
-                    <label class="block text-lg font-bold text-gray-800 mb-5 italic text-center">Pilihan Program (Boleh pilih banyak)</label>
+                    <label class="block text-lg font-bold text-gray-800 mb-5 italic text-center uppercase tracking-tight">Pilihan Program (Boleh pilih banyak)</label>
                     <div id="programList" class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <!-- Malam -->
-                        <label class="program-card malam-program flex items-center p-5 border-2 border-gray-100 rounded-2xl cursor-pointer hover:bg-gray-50 transition-all has-[:checked]:border-green-600 has-[:checked]:bg-green-50">
+                        <label class="program-card malam-program flex items-center p-5 border-2 border-gray-100 rounded-2xl cursor-pointer hover:bg-gray-50 transition-all has-[:checked]:border-green-600 has-[:checked]:bg-green-50 shadow-sm">
                             <input type="checkbox" name="program" value="Qori (RM60)" data-price="60" class="w-5 h-5 mr-4 accent-green-700">
-                            <div><span class="font-bold text-green-900 text-sm">Qori (Khamis) — RM60</span><p class="text-[10px] text-gray-500 uppercase font-bold">Tarannum</p></div>
+                            <div><span class="font-bold text-green-900 text-sm">Qori (Khamis) — RM60</span><p class="text-[10px] text-gray-500 uppercase font-bold">Tarannum / Al-Quran</p></div>
                         </label>
-                        <label class="program-card malam-program flex items-center p-5 border-2 border-gray-100 rounded-2xl cursor-pointer hover:bg-gray-50 transition-all has-[:checked]:border-green-600 has-[:checked]:bg-green-50">
+                        <label class="program-card malam-program flex items-center p-5 border-2 border-gray-100 rounded-2xl cursor-pointer hover:bg-gray-50 transition-all has-[:checked]:border-green-600 has-[:checked]:bg-green-50 shadow-sm">
                             <input type="checkbox" name="program" value="Hambali (RM80)" data-price="80" class="w-5 h-5 mr-4 accent-green-700">
                             <div><span class="font-bold text-green-900 text-sm">Hambali (Ahad/Isnin) — RM80</span><p class="text-[10px] text-gray-500 uppercase font-bold">Tajwid + B. Arab</p></div>
                         </label>
-                        <label class="program-card malam-program flex items-center p-5 border-2 border-gray-100 rounded-2xl cursor-pointer hover:bg-gray-50 transition-all has-[:checked]:border-green-600 has-[:checked]:bg-green-50">
+                        <label class="program-card malam-program flex items-center p-5 border-2 border-gray-100 rounded-2xl cursor-pointer hover:bg-gray-50 transition-all has-[:checked]:border-green-600 has-[:checked]:bg-green-50 shadow-sm">
                             <input type="checkbox" name="program" value="Maliki (RM80)" data-price="80" class="w-5 h-5 mr-4 accent-green-700">
                             <div><span class="font-bold text-green-900 text-sm">Maliki (Selasa/Rabu) — RM80</span><p class="text-[10px] text-gray-500 uppercase font-bold">Tajwid + Fardhu Ain</p></div>
                         </label>
-                        <label class="program-card malam-program flex items-center p-5 border-2 border-gray-100 rounded-2xl cursor-pointer hover:bg-gray-50 transition-all has-[:checked]:border-green-600 has-[:checked]:bg-green-50">
+                        <label class="program-card malam-program flex items-center p-5 border-2 border-gray-100 rounded-2xl cursor-pointer hover:bg-gray-50 transition-all has-[:checked]:border-green-600 has-[:checked]:bg-green-50 shadow-sm">
                             <input type="checkbox" name="program" value="Hanafi (RM150)" data-price="150" class="w-5 h-5 mr-4 accent-green-700">
-                            <div><span class="font-bold text-green-900 text-sm">Hanafi (4 Hari) — RM150</span><p class="text-[10px] text-gray-500 uppercase font-bold">Intensif</p></div>
+                            <div><span class="font-bold text-green-900 text-sm">Hanafi (Ahad-Rabu) — RM150</span><p class="text-[10px] text-gray-500 uppercase font-bold">4 Hari Seminggu</p></div>
                         </label>
-                        <label class="program-card malam-program flex items-center p-5 border-2 border-gray-100 rounded-2xl cursor-pointer hover:bg-gray-50 transition-all has-[:checked]:border-green-600 has-[:checked]:bg-green-50">
+                        <label class="program-card malam-program flex items-center p-5 border-2 border-gray-100 rounded-2xl cursor-pointer hover:bg-gray-50 transition-all has-[:checked]:border-green-600 has-[:checked]:bg-green-50 shadow-sm">
                             <input type="checkbox" name="program" value="Syafie (RM200)" data-price="200" class="w-5 h-5 mr-4 accent-green-700">
-                            <div><span class="font-bold text-green-900 text-sm">Syafie (5 Hari) — RM200</span><p class="text-[10px] text-gray-500 uppercase font-bold">Full Pakej</p></div>
+                            <div><span class="font-bold text-green-900 text-sm">Syafie (Ahad-Khamis) — RM200</span><p class="text-[10px] text-gray-500 uppercase font-bold">Pakej Penuh Seminggu</p></div>
                         </label>
                         <!-- Petang -->
                         <label class="program-card petang-program flex items-center p-5 border-2 border-dashed border-blue-200 rounded-2xl bg-blue-50 cursor-pointer has-[:checked]:border-blue-600 has-[:checked]:bg-blue-100 shadow-sm">
                             <input type="checkbox" name="program" value="Celik Quran (RM80)" data-price="80" class="w-5 h-5 mr-4 accent-blue-700">
-                            <div><span class="font-bold text-blue-900 text-sm">Celik Quran — RM80</span><p class="text-[10px] text-blue-700 uppercase font-bold text-center">Tadabbur (Sel/Rab)</p></div>
+                            <div><span class="font-bold text-blue-900 text-sm">Celik Quran — RM80</span><p class="text-[10px] text-blue-700 uppercase font-bold text-center">Tajwid + Tadabbur (Sel/Rab)</p></div>
                         </label>
-                        <!-- Pagi -->
+                        <!-- Pagi (UPDATED) -->
                         <label class="program-card pagi-program flex items-center p-5 border-2 border-dashed border-yellow-200 rounded-2xl bg-yellow-50 cursor-pointer has-[:checked]:border-yellow-600 has-[:checked]:bg-yellow-100 shadow-sm">
-                            <input type="checkbox" name="program" value="Khalifah Junior (RM40)" data-price="40" class="w-5 h-5 mr-4 accent-yellow-700">
-                            <div><span class="font-bold text-yellow-900 text-sm">Khalifah Junior — RM40</span><p class="text-[10px] text-yellow-700 uppercase font-bold text-center">Jumaat (Al-Quran + Solat)</p></div>
+                            <input type="checkbox" name="program" value="Khalifah Junior (RM80)" data-price="80" class="w-5 h-5 mr-4 accent-yellow-700">
+                            <div><span class="font-bold text-yellow-900 text-sm">Khalifah Junior — RM80</span><p class="text-[10px] text-yellow-700 uppercase font-bold text-left">Jumaat (Silibus Solat) + Sabtu (Hafazan)</p></div>
                         </label>
                     </div>
                 </div>
 
-                <div id="submitInfo" class="text-center hidden p-6 bg-green-50 text-green-700 font-bold rounded-2xl animate-pulse">
+                <div id="submitInfo" class="text-center hidden p-6 bg-green-50 text-green-700 font-bold rounded-2xl animate-pulse border border-green-100">
                     Sedang menghantar pendaftaran anda... ⏳
                 </div>
 
-                <button type="submit" id="submitBtn" class="w-full gradient-bg text-white font-bold py-5 rounded-2xl shadow-xl hover:opacity-90 transform transition-all active:scale-95 text-lg text-center">
+                <button type="submit" id="submitBtn" class="w-full gradient-bg text-white font-bold py-5 rounded-2xl shadow-xl hover:opacity-90 transform transition-all active:scale-95 text-lg text-center uppercase tracking-widest">
                     Hantar Pendaftaran Sekarang
                 </button>
             </form>
@@ -194,43 +194,43 @@
                 <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
                     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                 </div>
-                <h2 class="text-3xl font-extrabold text-gray-800 mb-2 tracking-tight text-center">Pendaftaran Berjaya!</h2>
+                <h2 class="text-3xl font-extrabold text-gray-800 mb-2 tracking-tight text-center uppercase">Pendaftaran Berjaya!</h2>
                 
-                <div class="my-6 p-6 bg-gray-50 rounded-2xl border border-gray-200 text-left">
-                    <h4 class="font-bold text-gray-700 mb-3 uppercase text-xs">Pecahan Bayaran:</h4>
+                <div class="my-6 p-6 bg-gray-50 rounded-2xl border border-gray-200 text-left shadow-inner">
+                    <h4 class="font-bold text-gray-700 mb-3 uppercase text-xs tracking-widest border-b pb-2">Pecahan Bayaran:</h4>
                     <div class="flex justify-between text-sm mb-2">
                         <span id="labelDaftar">Yuran Pendaftaran (RM10 × Murid)</span>
                         <span id="valDaftar" class="font-bold">RM0.00</span>
                     </div>
-                    <div class="flex justify-between text-sm mb-4 border-b pb-2">
+                    <div class="flex justify-between text-sm mb-4 border-b pb-3">
                         <span>Yuran Bulanan Program</span>
                         <span id="valBulanan" class="font-bold">RM0.00</span>
                     </div>
-                    <div class="flex justify-between text-lg font-black text-green-800 uppercase">
-                        <span>Jumlah Perlu Dibayar</span>
-                        <span id="valTotal">RM0.00</span>
+                    <div class="flex justify-between text-lg font-black text-green-800 uppercase tracking-tight">
+                        <span>Jumlah Keseluruhan</span>
+                        <span id="valTotal" class="text-2xl">RM0.00</span>
                     </div>
                 </div>
 
                 <div id="paymentDetails" class="space-y-6">
                     <p class="text-xs text-gray-500 italic text-center">Sila buat pembayaran ke akaun di bawah (Klik gambar untuk besarkan):</p>
                     <div class="my-4 flex justify-center">
-                        <img id="paymentImg" src="https://i.postimg.cc/9fLX97HM/Whats-App-Image-2026-01-06-at-8-23-56-PM.jpg" alt="QR Code" 
-                             class="rounded-xl max-w-[220px] shadow-md border cursor-pointer hover:opacity-90 transition-opacity"
+                        <img id="paymentImg" src="https://i.postimg.cc/9fLX97HM/Whats-App-Image-2026-01-06-at-8-23-56-PM.jpg" alt="Akaun Bank & QR Code" 
+                             class="rounded-xl max-w-[220px] shadow-md border cursor-pointer hover:scale-[1.02] transition-transform"
                              onclick="openModal(this.src)">
                     </div>
-                    <div class="bg-gray-100 p-6 rounded-2xl inline-block w-full max-w-sm text-left border mx-auto">
-                        <p class="text-[10px] uppercase text-gray-400 font-bold mb-1 tracking-widest text-left">Maybank</p>
+                    <div class="bg-gray-100 p-6 rounded-2xl inline-block w-full max-w-sm text-left border shadow-sm mx-auto">
+                        <p class="text-[10px] uppercase text-gray-400 font-bold mb-1 tracking-widest text-left">Akaun Pembayaran</p>
                         <p class="text-xl font-black text-gray-800 tracking-widest text-left">5512 9461 4510</p>
-                        <p class="text-[10px] font-bold text-green-700 uppercase text-left">EXCELLENT SIFOO CENTER</p>
+                        <p class="text-[10px] font-bold text-green-700 uppercase text-left">EXCELLENT SIFOO CENTER (Maybank)</p>
                     </div>
                 </div>
 
                 <div class="mt-8 space-y-4">
-                    <p class="text-[10px] text-red-500 font-bold uppercase tracking-tighter text-center">* Sila hantar tangkapan layar (screenshot) bukti ini dan hantar ke WhatsApp admin.</p>
+                    <p class="text-[10px] text-red-500 font-bold uppercase tracking-tighter text-center animate-pulse">* Sila tangkap layar (screenshot) bukti ini dan hantar ke WhatsApp admin.</p>
                     <a id="waLink" href="#" target="_blank" class="inline-flex items-center gap-3 bg-green-600 text-white font-bold py-5 px-12 rounded-full shadow-2xl hover:bg-green-700 transition-all transform hover:scale-105 active:scale-95 mx-auto">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                        WhatsApp Bukti Pendaftaran
+                        WhatsApp Bukti & Resit
                     </a>
                 </div>
             </div>
@@ -240,11 +240,12 @@
 
     <!-- Modal for Image Popup -->
     <div id="imageModal" onclick="closeModal()">
-        <img id="modalImg" src="" alt="Popup Image">
-        <p class="text-white text-xs mt-4 font-bold bg-black/50 px-4 py-2 rounded-full uppercase">Klik mana-mana untuk tutup</p>
+        <img id="modalImg" src="" alt="Paparan Besar">
+        <p class="text-white text-xs mt-4 font-bold bg-black/50 px-4 py-2 rounded-full uppercase tracking-widest">Klik mana-mana untuk tutup</p>
     </div>
 
     <script>
+        // GANTIKAN URL INI DENGAN WEB APP URL ANDA
         const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx65MQYWJNMA9zm-qqQ0CMZFe0JeDuilQmLoCoJsGjM9LsfuZPWjCBc9RlADj5EKdmv/exec"; 
         const WA_BASE_URL = "https://wa.link/h35um6";
 
@@ -263,13 +264,13 @@
             const img = document.getElementById('modalImg');
             img.src = src;
             modal.classList.add('active');
-            document.body.style.overflow = 'hidden'; // Stop scrolling
+            document.body.style.overflow = 'hidden'; 
         }
 
         function closeModal() {
             const modal = document.getElementById('imageModal');
             modal.classList.remove('active');
-            document.body.style.overflow = 'auto'; // Resume scrolling
+            document.body.style.overflow = 'auto'; 
         }
 
         let isEarlyBird = false;
@@ -278,12 +279,13 @@
             isEarlyBird = true;
             bannerNormal.classList.add('hidden');
             bannerClaimed.classList.remove('hidden');
-            regFeeInfo.innerHTML = "Early Bird: Yuran Pendaftaran RM0 (PERCUMA)";
-            regFeeInfo.className = "text-[10px] text-green-600 mt-2 font-bold uppercase animate-pulse text-center";
+            regFeeInfo.innerHTML = "🌟 Early Bird: Pendaftaran RM0 (PERCUMA)";
+            regFeeInfo.className = "text-[10px] text-green-600 mt-2 font-bold uppercase animate-pulse text-center tracking-widest";
             
+            // Uncheck dan tutup Sesi Malam (Hanya Pagi & Petang sahaja)
             sesiMalam.checked = false;
             sesiMalam.disabled = true;
-            labelMalam.style.opacity = "0.3";
+            labelMalam.style.opacity = "0.2";
             labelMalam.style.pointerEvents = "none";
             
             updateProgramDisplay();
@@ -294,7 +296,7 @@
             bannerNormal.classList.remove('hidden');
             bannerClaimed.classList.add('hidden');
             regFeeInfo.innerHTML = "Yuran Pendaftaran: RM10 per murid";
-            regFeeInfo.className = "text-[10px] text-gray-500 mt-2 font-bold uppercase text-center";
+            regFeeInfo.className = "text-[10px] text-gray-500 mt-2 font-bold uppercase text-center tracking-wider";
 
             sesiMalam.disabled = false;
             labelMalam.style.opacity = "1";
@@ -309,15 +311,15 @@
                 const div = document.createElement('div');
                 div.className = "bg-white p-6 rounded-2xl border-2 border-gray-100 shadow-sm space-y-5 animate-fade-in";
                 div.innerHTML = `
-                    <h4 class="font-bold text-green-700 flex items-center gap-3 text-sm italic">
-                        <span class="w-7 h-7 rounded-full bg-green-700 text-white text-[10px] flex items-center justify-center shadow-md">${i}</span>
+                    <h4 class="font-bold text-green-700 flex items-center gap-3 text-sm italic uppercase tracking-wide">
+                        <span class="w-7 h-7 rounded-full bg-green-700 text-white text-[10px] flex items-center justify-center shadow-md font-bold">${i}</span>
                         Maklumat Murid ${i}
                     </h4>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                        <input type="text" name="nama_${i}" required placeholder="Nama Penuh Murid" class="p-4 rounded-xl border border-gray-200 w-full outline-none focus:ring-2 focus:ring-green-400 bg-gray-50 focus:bg-white transition-all">
-                        <input type="text" name="ic_${i}" required placeholder="No IC Murid" class="p-4 rounded-xl border border-gray-200 w-full outline-none focus:ring-2 focus:ring-green-400 bg-gray-50 focus:bg-white transition-all">
-                        <input type="number" name="umur_${i}" required placeholder="Umur" class="p-4 rounded-xl border border-gray-200 w-full outline-none focus:ring-2 focus:ring-green-400 bg-gray-50 focus:bg-white transition-all">
-                        <select name="tahap_${i}" required class="p-4 rounded-xl border border-gray-200 w-full outline-none bg-gray-50 focus:bg-white focus:ring-2 focus:ring-green-400 transition-all">
+                        <input type="text" name="nama_${i}" required placeholder="Nama Penuh Murid" class="p-4 rounded-xl border border-gray-200 w-full outline-none focus:ring-2 focus:ring-green-400 bg-gray-50 focus:bg-white transition-all shadow-sm">
+                        <input type="text" name="ic_${i}" required placeholder="No IC Murid" class="p-4 rounded-xl border border-gray-200 w-full outline-none focus:ring-2 focus:ring-green-400 bg-gray-50 focus:bg-white transition-all shadow-sm">
+                        <input type="number" name="umur_${i}" required placeholder="Umur" class="p-4 rounded-xl border border-gray-200 w-full outline-none focus:ring-2 focus:ring-green-400 bg-gray-50 focus:bg-white transition-all shadow-sm">
+                        <select name="tahap_${i}" required class="p-4 rounded-xl border border-gray-200 w-full outline-none bg-gray-50 focus:bg-white focus:ring-2 focus:ring-green-400 transition-all shadow-sm">
                             <option value="">-- Pilih Tahap --</option>
                             <option value="Iqra' 1-3">Iqra' 1-3</option>
                             <option value="Iqra' 4-6">Iqra' 4-6</option>
@@ -393,7 +395,7 @@
             formData.append('pilihan_kelas', programNames);
             formData.append('nama_waris', form.querySelector('input[name="nama_waris"]').value);
             formData.append('no_tel_waris', form.querySelector('input[name="no_tel_waris"]').value);
-            formData.append('status_pembayaran', isEarlyBird ? "Early Bird (RM" + grandTotal + ")" : "Menunggu Bayaran (RM" + grandTotal + ")");
+            formData.append('status_pembayaran', isEarlyBird ? "Early Bird (Total: RM" + grandTotal + ")" : "Menunggu Bayaran (Total: RM" + grandTotal + ")");
 
             try {
                 fetch(SCRIPT_URL, { 
@@ -417,20 +419,20 @@
                         document.getElementById('labelDaftar').innerHTML = "Yuran Pendaftaran (RM10 × " + countMurid + ")";
                     }
 
-                    const waMsg = `Assalamualaikum Admin, pendaftaran murid berjaya dihantar:\n\n` + 
+                    const waMsg = `Assalamualaikum Admin, pendaftaran murid baru Permata Keluarga:\n\n` + 
                                   `👤 Waris: ${form.querySelector('input[name="nama_waris"]').value}\n` +
                                   `👥 Peserta: ${pesertaList.length} orang\n` +
                                   `🕒 Sesi: ${sesiChecked.join(", ")}\n` +
                                   `📚 Program: ${programNames}\n` +
                                   `💰 Jumlah: RM${grandTotal.toFixed(2)}\n` +
-                                  `💳 Status: ${isEarlyBird ? "EARLY BIRD (Percuma Daftar)" : "Resit Terlampir"}`;
+                                  `💳 Status: ${isEarlyBird ? "EARLY BIRD (Percuma Daftar)" : "Bayaran Berbayar"}`;
                     
                     document.getElementById('waLink').href = `${WA_BASE_URL}?text=${encodeURIComponent(waMsg)}`;
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                 }, 1500);
 
             } catch (err) {
-                console.log("Error submitting.");
+                console.log("Submit error caught.");
             }
         });
     </script>
