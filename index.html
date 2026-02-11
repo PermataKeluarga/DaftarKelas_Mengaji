@@ -20,7 +20,6 @@
         .animate-fade-in { animation: fadeIn 0.5s ease-out forwards; }
         input:disabled + label { opacity: 0.3; cursor: not-allowed; background-color: #f3f4f6; }
 
-        /* Modal Popup Styles */
         #imageModal {
             display: none;
             position: fixed;
@@ -49,10 +48,9 @@
 <body class="p-4 md:p-10">
 
     <div class="max-w-4xl mx-auto">
-        <!-- Tajuk Utama -->
         <div class="gradient-bg text-white p-10 rounded-t-[30px] shadow-lg text-center">
             <h1 class="text-3xl font-bold mb-2 text-center">📖 Borang Daftar Kelas Mengaji</h1>
-            <p class="text-green-100 italic font-light italic text-center">Pendaftaran Sesi 2026 - Kelas Eksklusif Permata Keluarga 😍</p>
+            <p class="text-green-100 italic font-light text-center">Pendaftaran Sesi 2026 - Kelas Eksklusif Permata Keluarga 😍</p>
             <div class="mt-4 inline-block bg-white/20 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
                 Yuran Pendaftaran: RM10 (Iqra' & Modul)
             </div>
@@ -60,7 +58,6 @@
 
         <div class="form-card p-6 md:p-12 rounded-b-[30px] border border-gray-100">
             
-            <!-- Banner Tawaran Early Bird -->
             <div id="earlyBirdBanner" class="mb-10 p-6 bg-yellow-50 border-2 border-dashed border-yellow-400 rounded-2xl shadow-sm">
                 <div id="bannerNormal" class="flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
                     <div>
@@ -85,7 +82,6 @@
 
             <form id="registrationForm" class="space-y-10">
                 
-                <!-- Maklumat Waris -->
                 <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100 shadow-sm space-y-5">
                     <h3 class="font-bold text-blue-800 text-sm flex items-center gap-2 uppercase tracking-widest italic">Maklumat Waris (Penjaga)</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -100,7 +96,6 @@
                     </div>
                 </div>
 
-                <!-- Bilangan Peserta -->
                 <div class="text-center bg-gray-50 p-8 rounded-2xl border border-gray-200 shadow-sm">
                     <label class="block text-sm font-bold text-gray-700 mb-4 text-center">Berapa orang murid nak didaftarkan?</label>
                     <div class="flex justify-center gap-4">
@@ -115,12 +110,10 @@
                     <p id="regFeeInfo" class="text-[10px] text-gray-500 mt-2 font-bold uppercase text-center tracking-wider">Yuran Pendaftaran: RM10 per murid</p>
                 </div>
 
-                <!-- Container Maklumat Murid -->
                 <div id="pesertaContainer" class="space-y-8"></div>
 
                 <hr class="border-gray-100">
 
-                <!-- Pilihan Sesi (Multiple) -->
                 <div>
                     <label class="block text-lg font-bold text-gray-800 mb-6 text-center uppercase tracking-tight">Pilih Sesi Pengajian (Boleh pilih >1)</label>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -142,11 +135,9 @@
                     </div>
                 </div>
 
-                <!-- Pilihan Program -->
                 <div id="programSection" class="hidden">
                     <label class="block text-lg font-bold text-gray-800 mb-5 italic text-center uppercase tracking-tight">Pilihan Program (Boleh pilih banyak)</label>
                     <div id="programList" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <!-- Malam -->
                         <label class="program-card malam-program flex items-center p-5 border-2 border-gray-100 rounded-2xl cursor-pointer hover:bg-gray-50 transition-all has-[:checked]:border-green-600 has-[:checked]:bg-green-50 shadow-sm">
                             <input type="checkbox" name="program" value="Qori (RM60)" data-price="60" class="w-5 h-5 mr-4 accent-green-700">
                             <div><span class="font-bold text-green-900 text-sm">Qori (Khamis) — RM60</span><p class="text-[10px] text-gray-500 uppercase font-bold">Tarannum / Al-Quran</p></div>
@@ -167,12 +158,10 @@
                             <input type="checkbox" name="program" value="Syafie (RM200)" data-price="200" class="w-5 h-5 mr-4 accent-green-700">
                             <div><span class="font-bold text-green-900 text-sm">Syafie (Ahad-Khamis) — RM200</span><p class="text-[10px] text-gray-500 uppercase font-bold">Pakej Penuh Seminggu</p></div>
                         </label>
-                        <!-- Petang -->
                         <label class="program-card petang-program flex items-center p-5 border-2 border-dashed border-blue-200 rounded-2xl bg-blue-50 cursor-pointer has-[:checked]:border-blue-600 has-[:checked]:bg-blue-100 shadow-sm">
                             <input type="checkbox" name="program" value="Celik Quran (RM80)" data-price="80" class="w-5 h-5 mr-4 accent-blue-700">
                             <div><span class="font-bold text-blue-900 text-sm">Celik Quran — RM80</span><p class="text-[10px] text-blue-700 uppercase font-bold text-center">Tajwid + Tadabbur (Sel/Rab)</p></div>
                         </label>
-                        <!-- Pagi (UPDATED) -->
                         <label class="program-card pagi-program flex items-center p-5 border-2 border-dashed border-yellow-200 rounded-2xl bg-yellow-50 cursor-pointer has-[:checked]:border-yellow-600 has-[:checked]:bg-yellow-100 shadow-sm">
                             <input type="checkbox" name="program" value="Khalifah Junior (RM80)" data-price="80" class="w-5 h-5 mr-4 accent-yellow-700">
                             <div><span class="font-bold text-yellow-900 text-sm">Khalifah Junior — RM80</span><p class="text-[10px] text-yellow-700 uppercase font-bold text-left">Jumaat (Silibus Solat) + Sabtu (Hafazan)</p></div>
@@ -189,7 +178,6 @@
                 </button>
             </form>
 
-            <!-- Halaman Berjaya -->
             <div id="paymentSection" class="hidden mt-10 p-8 bg-white border-2 border-green-600 rounded-[30px] shadow-2xl text-center animate-fade-in">
                 <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
                     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
@@ -199,11 +187,11 @@
                 <div class="my-6 p-6 bg-gray-50 rounded-2xl border border-gray-200 text-left shadow-inner">
                     <h4 class="font-bold text-gray-700 mb-3 uppercase text-xs tracking-widest border-b pb-2">Pecahan Bayaran:</h4>
                     <div class="flex justify-between text-sm mb-2">
-                        <span id="labelDaftar">Yuran Pendaftaran (RM10 × Murid)</span>
+                        <span id="labelDaftar">Yuran Pendaftaran</span>
                         <span id="valDaftar" class="font-bold">RM0.00</span>
                     </div>
                     <div class="flex justify-between text-sm mb-4 border-b pb-3">
-                        <span>Yuran Bulanan Program</span>
+                        <span id="labelBulanan">Yuran Bulanan Program</span>
                         <span id="valBulanan" class="font-bold">RM0.00</span>
                     </div>
                     <div class="flex justify-between text-lg font-black text-green-800 uppercase tracking-tight">
@@ -220,9 +208,9 @@
                              onclick="openModal(this.src)">
                     </div>
                     <div class="bg-gray-100 p-6 rounded-2xl inline-block w-full max-w-sm text-left border shadow-sm mx-auto">
-                        <p class="text-[10px] uppercase text-gray-400 font-bold mb-1 tracking-widest text-left">Akaun Pembayaran</p>
-                        <p class="text-xl font-black text-gray-800 tracking-widest text-left">5512 9461 4510</p>
-                        <p class="text-[10px] font-bold text-green-700 uppercase text-left">EXCELLENT SIFOO CENTER (Maybank)</p>
+                        <p class="text-[10px] uppercase text-gray-400 font-bold mb-1 tracking-widest">Akaun Pembayaran</p>
+                        <p class="text-xl font-black text-gray-800 tracking-widest">5512 9461 4510</p>
+                        <p class="text-[10px] font-bold text-green-700 uppercase">EXCELLENT SIFOO CENTER (Maybank)</p>
                     </div>
                 </div>
 
@@ -238,14 +226,12 @@
         </div>
     </div>
 
-    <!-- Modal for Image Popup -->
     <div id="imageModal" onclick="closeModal()">
         <img id="modalImg" src="" alt="Paparan Besar">
         <p class="text-white text-xs mt-4 font-bold bg-black/50 px-4 py-2 rounded-full uppercase tracking-widest">Klik mana-mana untuk tutup</p>
     </div>
 
     <script>
-        // GANTIKAN URL INI DENGAN WEB APP URL ANDA
         const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx65MQYWJNMA9zm-qqQ0CMZFe0JeDuilQmLoCoJsGjM9LsfuZPWjCBc9RlADj5EKdmv/exec"; 
         const WA_BASE_URL = "https://wa.link/h35um6";
 
@@ -258,7 +244,6 @@
         const bannerClaimed = document.getElementById('bannerClaimed');
         const regFeeInfo = document.getElementById('regFeeInfo');
 
-        // Modal Functions
         function openModal(src) {
             const modal = document.getElementById('imageModal');
             const img = document.getElementById('modalImg');
@@ -282,7 +267,6 @@
             regFeeInfo.innerHTML = "🌟 Early Bird: Pendaftaran RM0 (PERCUMA)";
             regFeeInfo.className = "text-[10px] text-green-600 mt-2 font-bold uppercase animate-pulse text-center tracking-widest";
             
-            // Uncheck dan tutup Sesi Malam (Hanya Pagi & Petang sahaja)
             sesiMalam.checked = false;
             sesiMalam.disabled = true;
             labelMalam.style.opacity = "0.2";
@@ -381,11 +365,15 @@
                 });
             }
 
-            let totalBulanan = 0;
-            programChecked.forEach(el => totalBulanan += parseInt(el.dataset.price));
+            // --- LOGIK PENGIRAAN DIKEMASKINI ---
+            let hargaProgramSeorang = 0;
+            programChecked.forEach(el => hargaProgramSeorang += parseInt(el.dataset.price));
+            
+            const totalBulanan = hargaProgramSeorang * countMurid; // Darab bilangan murid
             const yuranDaftarPerMurid = isEarlyBird ? 0 : 10;
             const totalDaftar = countMurid * yuranDaftarPerMurid;
             const grandTotal = totalDaftar + totalBulanan;
+            // -----------------------------------
 
             const programNames = programChecked.map(el => el.value).join(", ");
 
@@ -412,6 +400,8 @@
                     document.getElementById('valDaftar').innerText = "RM" + totalDaftar.toFixed(2);
                     document.getElementById('valBulanan').innerText = "RM" + totalBulanan.toFixed(2);
                     document.getElementById('valTotal').innerText = "RM" + grandTotal.toFixed(2);
+                    
+                    document.getElementById('labelBulanan').innerHTML = `Yuran Bulanan (RM${hargaProgramSeorang} × ${countMurid} Murid)`;
                     
                     if(isEarlyBird) {
                         document.getElementById('labelDaftar').innerHTML = "Yuran Pendaftaran (Early Bird Free)";
